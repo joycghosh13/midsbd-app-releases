@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Download the MIDSBD App</title>
+<meta name="description" content="Download the official MIDSBD Android app." />
+<style>
+  :root {
+    --green: #0E9F6E;
+    --green-dark: #0A7A55;
+    --ink: #0E1428;
+    --ink3: #7B8194;
+    --line: #E6E9EF;
+    --bg: #F7F8FA;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    padding: 24px 16px 48px;
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    padding: 32px 24px;
+    text-align: center;
+    box-shadow: 0 8px 40px rgba(14, 20, 40, 0.06);
+  }
+  .logo { width: 190px; max-width: 70%; height: auto; margin: 8px auto 20px; display: block; }
+  h1 { font-size: 22px; font-weight: 800; margin: 0 0 6px; letter-spacing: -0.4px; }
+  .sub { color: var(--ink3); font-size: 14px; margin: 0 0 24px; }
+  .btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    width: 100%;
+    background: var(--green);
+    color: #fff;
+    font-size: 17px; font-weight: 700;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 16px;
+    transition: background .15s ease, transform .05s ease;
+  }
+  .btn:active { background: var(--green-dark); transform: scale(.99); }
+  .meta { color: var(--ink3); font-size: 12px; margin-top: 12px; }
+  .steps {
+    text-align: left;
+    margin: 28px 0 0;
+    border-top: 1px solid var(--line);
+    padding-top: 22px;
+  }
+  .steps h2 { font-size: 14px; font-weight: 700; margin: 0 0 14px; color: var(--ink); }
+  .step { display: flex; gap: 12px; margin-bottom: 14px; }
+  .num {
+    flex: none; width: 24px; height: 24px; border-radius: 50%;
+    background: #E8F5EF; color: var(--green-dark);
+    font-size: 13px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .step p { margin: 0; font-size: 14px; color: var(--ink); }
+  .step p span { color: var(--ink3); }
+  .note {
+    margin-top: 18px; font-size: 12px; color: var(--ink3);
+    background: #FBFBFC; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px;
+  }
+  .foot { margin-top: 22px; font-size: 12px; color: var(--ink3); }
+  .foot a { color: var(--green-dark); }
+</style>
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="./mids-logo.png" alt="MIDSBD" />
+    <h1>Download the MIDSBD app</h1>
+    <p class="sub">Official Android app · for members in Bangladesh</p>
+
+    <a class="btn" id="download"
+       href="https://github.com/joycghosh13/midsbd-app-releases/releases/latest/download/midsbd.apk">
+      ⬇&nbsp; Download app
+    </a>
+    <p class="meta">Android · version 1.0.0 · about 57 MB</p>
+
+    <section class="steps">
+      <h2>How to install</h2>
+      <div class="step">
+        <div class="num">1</div>
+        <p>Tap <strong>Download app</strong> above and wait for the file to finish.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <p>Open the downloaded file. <span>If your phone asks, tap <strong>Settings</strong> and turn on “Allow from this source” — this is only needed once.</span></p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <p>Tap <strong>Install</strong>, then <strong>Open</strong>. The MIDSBD icon will appear on your home screen.</p>
+      </div>
+    </section>
+
+    <p class="note">This is the official app from MIDSBD. Only install it from this page or a link shared by MIDSBD. Your phone may briefly say the app is “unrecognised” because it isn’t from the Play Store yet — that is expected; tap <strong>Install anyway</strong>.</p>
+
+    <p class="foot">Need help? Contact us on
+      <a href="https://wa.me/8801805015861">WhatsApp</a> or call 01755503030.</p>
+  </main>
+
+  <script>
+    // iOS visitors can't install Android APKs — tell them instead of a dead download.
+    var ua = navigator.userAgent || "";
+    if (/iPhone|iPad|iPod/i.test(ua)) {
+      var b = document.getElementById("download");
+      b.removeAttribute("href");
+      b.textContent = "Android only — open on an Android phone";
+      b.style.background = "#7B8194";
+    }
+  </script>
+</body>
+</html>
