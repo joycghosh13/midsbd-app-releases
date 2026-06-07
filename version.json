@@ -1,7 +1,7 @@
 {
-  "versionCode": 4,
-  "versionName": "1.0.3",
+  "versionCode": 5,
+  "versionName": "1.0.4",
   "apkUrl": "https://github.com/joycghosh13/midsbd-app-releases/releases/latest/download/midsbd.apk",
-  "notes": "What's new:\n• Phone sign-up now logs you straight in after entering the OTP\n• Email sign-up confirmation screen fixed",
+  "notes": "What's new:\n• Email confirmation now opens the app and signs you in automatically\n• Phone sign-up logs you straight in after the OTP",
   "minVersionCode": 0
 }
