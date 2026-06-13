@@ -1,7 +1,7 @@
 {
-  "versionCode": 5,
-  "versionName": "1.0.4",
+  "versionCode": 6,
+  "versionName": "1.0.5",
   "apkUrl": "https://github.com/joycghosh13/midsbd-app-releases/releases/latest/download/midsbd.apk",
-  "notes": "What's new:\n• Email confirmation now opens the app and signs you in automatically\n• Phone sign-up logs you straight in after the OTP",
+  "notes": "What's new:\n• Co-Ownership — the MIDS Premium tier is live with a share calculator and add-to-cart\n• Launch promo introducing Co-Ownership when you open the app\n• Member status now shows \"Rejected\" correctly when an application is not approved",
   "minVersionCode": 0
 }
